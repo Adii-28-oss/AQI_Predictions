@@ -64,4 +64,4 @@ def predict():
         return render_template("predict.html", features=FEATURES, meta=META, sample=SAMPLE, error=str(e))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True)
